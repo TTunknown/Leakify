@@ -58,7 +58,7 @@ const UploadModal = () => {
             // Upload song
             const {
                 data: songData,
-                song: songError,
+                error: songError,
             } = await supabaseClient
                 .storage
                 .from('songs')
@@ -75,7 +75,7 @@ const UploadModal = () => {
             // Upload image
             const {
                 data: imageData,
-                song: imageError,
+                error: imageError,
             } = await supabaseClient
                 .storage
                 .from('images')
